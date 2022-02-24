@@ -7,41 +7,68 @@ html,body{
     margin: 0;
     padding: 0;
 }
-/* body{
-    border: 5px solid red;
-} */
+ body{
+   
+    overflow: hidden;
+    
+} 
 
 nav{
-    background-color: rgb(6, 158, 138);
-    height: 3rem;
+    background-color: #00b19d;
+    height: 5vh;
 }
 
 .container-body{
     display: flex;
     flex-flow: column;
     height: 100%;
-    border: 1px solid yellow;
+   
 }
 .container-main{
     display: flex;
     flex-flow: row;
     height: 100%;
-    border: 1px solid rgb(39, 218, 3);
+   
 }
 #index{
-    background-color: rgb(88, 88, 143);
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(255, 255, 255);
     width: 5rem;
     height: 100%;
 }
-main{
-    height: 100%;
-    background-color: rgb(248, 248, 248);
-    flex: 1 ;
+.bott{
+    color: #ffffff;
+    background:#00b19d ;
+    border-radius: 3rem;
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
 }
+.bott:hover{
+    transform: scale(1.05);
+    border: 1px solid #666666b2;
+    background:#00b19c69 ;
+} 
+main{
+    height: 95vh;
+    background-color:#E8EBF0;
+    flex: 1 ;
+
+}
+
 #shop{
-    background-color: rgb(230, 230, 230);
-    height: 100%;
-    flex: 0.4;
+    display: flex
+    flex-flow: column
+    background-color: rgb(255, 255, 255)
+    height: 95vh;
+    flex: 0.5
+    
    
 
 }
@@ -50,54 +77,152 @@ main{
 }
 
 footer{
-    background-color: rgb(202, 202, 202);
+    flex-flow: column;
+    background-color: #e7e7e7;
     position: fixed;
     bottom: 0rem;
-    width: 100%;
+    width: 31.8%;
     height: 8rem;
+ 
 }
-article{
-    margin: 0.8rem;
-    border: 1px solid black;
+#target{
+    display: flex;
+    flex-flow: column;
+    margin: 3rem;
+    -webkit-box-shadow: 1px 1px 1px 1px #a8a8a8;
+    box-shadow: 1px 1px 1px 1px #a8a8a8d5;
     height: 15rem;
-    width: 10rem;
-   
-    
+    width: 11rem;
+    background: #ffffff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
 }
-#articulo{  
+
+#target:hover{
+    transform: scale(1.05);
+    border: 1px solid #a1a1a1;
+} 
+.search{
+   height: 2rem;
+    background-color: rgb(7, 148, 7);
+    border:1px solid rgb(7, 148, 7);
+    border-radius: 0.4rem 0rem 0rem 0.4rem ;
+}
+.sea{
+    border: 1px solid #00b19d;
+    top: 4rem;
+    height: 2rem;
+    width: 55rem;
+    border-radius: 0rem .4rem 0.4rem 0rem ;
+}
+#articulo{ 
+    height: 89vh; 
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
+    overflow-y: scroll;
 }
 #ss{
+    height: 2vh;
     margin: 1rem;
+    
 }
-.search{
-    height: 2rem;
+.can{
+    color: white;
+    height: 3rem;
+    background-color: #809bb6;
+    margin: 0.1rem;
+    border-color: #809bb6;
+    float:right;
 }
-.sea{
-  
-    height: 2rem;
-    width: 15rem;
-}
-#boton{
-   flex: 1;
-    margin: 2rem;
+.produc{
+    float: left;
+    margin: 1rem;
+    color: white;
+    
 }
 #cancel{
-    margin: 1rem;
+    
+    height: 2.8rem;
+    margin-top: 1rem;
+    background-color: #809bb6;
+    color: white;
 }
 
+#boton{
+    margin-top: 1rem;
+}
+.venta{
+    border: 1px solid #00b19d;
+    background-color: #00b19d;
+    width:100%;
+    border-radius: 0.7rem;
+}
 
+.vender{
+    margin: 1rem;
+    float: left;
+    color: white;
+}
 
+.prec{
+    text-align: center;
+    margin: 1rem;
+    float: right;
+    color: white;
+}
+/**/
 
+.h3{
+    height: 3rem;
+    width: 100%;
+    background-color: #809bb6;
+    color: white;
+    line-height: 3rem;
+}
+p{
+    color: #00b19d;
+    margin-left: 0.3rem;
+}
+.img{
 
+    background-size: cover;
+    border: 3px solid rgba(0, 0, 0, 0.356);
+    background-position: center;
+  
+}
 
+.nombre{
+   text-align: center;
+}
+.precio{
+    text-align: center;
+}
 
+.inventario{
+  
+    display: flex;
+    position: relative;
+    left: 8.8rem;
+    width: 2rem;
+    top: -1rem;
+    background: #ffffff;
 
+  
+}
+.codigo{
+    display: flex;
+    position: relative;
+    background: #ffffff;
+    top: .9rem;
+    width: 3rem;
+}
+    .arti{
+   border: 1px solid rgba(128, 128, 128, 0.356);;
+   height: 3rem;
 
-
-
-
+   }
